@@ -1,0 +1,59 @@
+.seccion-presentacion{
+   display: flex;
+    align-items: center;
+    background:linear-gradient(rgba(5, 7, 12, 0.05),rgba(5, 7, 12, 0.75)),
+   url('img/fondo3.png');
+    background-size: cover;
+    height: 100vh;
+}
+.presentacion {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 50px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 150px;
+}
+
+/* Estilos para el h3 */
+.presentacion h3 {
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 50px; /* Cambia el tamaño de fuente */
+    color: #000000; /* Cambia el color del texto */
+    /* Puedes agregar más estilos según tus preferencias */
+}
+
+/* Estilos para los p */
+.presentacion p {
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 18px; /* Cambia el tamaño de fuente */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas */
+    color: #000000; /* Cambia el color del texto */
+    text-align: justify;
+}
+
+@media screen and (max-width: 1200px) {
+    .presentacion {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%; 
+        margin: 30px;
+    }
+
+    .seccion-presentacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+    }
+
+}
+@media screen and (max-width: 900px) {
+
+    .seccion-presentacion{
+         height: auto;
+     }
+}

@@ -1,0 +1,83 @@
+.informacion-contacto {
+    background:linear-gradient(rgba(5, 7, 12, 0.05),rgba(5, 7, 12, 0.75)),
+    url('img/fondo1.png');
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra los elementos verticalmente */
+    min-height: 300px; /* Ajusta la altura mínima según tus necesidades */
+}
+
+/* Estilo para los contenedores internos, distribuyendo el espacio */
+.informacion-contacto .datos-contacto, 
+.informacion-contacto .logo-contacto {
+    flex: 1; /* Distribuye el espacio equitativamente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.informacion-contacto .datos-contacto {
+    /* Estilos adicionales para datos-contacto si es necesario */
+}
+
+.informacion-contacto .logo-contacto {
+    /* Estilos adicionales para logo-contacto si es necesario */
+}
+
+.informacion-contacto .datos-contacto h3,
+.informacion-contacto .datos-contacto p,
+.informacion-contacto .datos-contacto a {
+    /* Centrar texto y enlaces dentro de datos-contacto */
+    text-align: center;
+}
+
+.informacion-contacto .logo-contacto img {
+    width: 350px;
+    height: auto;
+}
+
+/* Estilos para el título h3 dentro de datos-contacto */
+.datos-contacto h3 {
+    color: #000; /* Cambia el color según tus preferencias */
+    font-size: 40px; /* Aumenta el tamaño del título */
+    margin-bottom: 20px; /* Aumenta el espacio debajo del título */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* Otros estilos que desees añadir (tipo de fuente, peso, etc.) */
+}
+
+/* Estilos para los párrafos dentro de datos-contacto */
+.datos-contacto p {
+    color: #a51c1c; /* Cambia el color según tus preferencias */
+    font-size: 25px; /* Ajusta el tamaño de la fuente si es necesario */
+    margin-bottom: 15px; /* Espacio entre los párrafos */
+    
+}
+
+/* Estilos para los enlaces dentro de los párrafos en datos-contacto */
+.datos-contacto p a {
+    font-size: 20px;
+    color: #000; /* Cambia el color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.datos-contacto p a:hover {
+    text-decoration: underline; /* Añade subrayado al pasar el mouse sobre el enlace */
+    /* Otros estilos para el hover si es necesario */
+}
+@media screen and (max-width: 768px) {
+    .informacion-contacto {
+      flex-direction: column; /* Cambia la dirección de flex a vertical */
+      align-items: center; /* Centra los elementos horizontalmente */
+      min-height: auto; /* Elimina la altura mínima */
+    }
+  
+    .informacion-contacto .datos-contacto,
+    .informacion-contacto .logo-contacto {
+      width: 100%; /* Ocupa todo el ancho disponible */
+    }
+  }
+  

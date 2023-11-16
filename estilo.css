@@ -1,0 +1,411 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+ul {
+  z-index: 1000; /* Asegura que el menú esté en la parte superior de la pila de elementos */
+}
+
+nav ul{
+  float: right;
+  margin-right: 40px;
+}
+nav ul li{
+  display: inline-block;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+.contacto a {
+text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+color: #ffffff; /* Establece el color de texto de los enlaces según tus preferencias */
+/* Agrega otros estilos según sea necesario */
+}
+
+
+/* Estilo de la barra superior */
+.barra-superior {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #2E2E2E;
+color: white;
+padding: 10px 20px;
+}
+
+.barra-superior .contacto span, .barra-superior .redes-sociales a {
+margin: 0 10px;
+}
+
+/* Íconos de Font Awesome */
+.fa-envelope, .fa-phone, .fa-map-marker-alt, .fa-facebook, .fa-instagram, .fa-linkedin {
+margin-right: 5px;
+}
+
+/* Estilo de la navegación */
+.menu-navegacion {
+display: flex;
+position: relative;
+justify-content: space-between;
+align-items: center;
+background-color: #34495E; /* Color de fondo, ajusta según tus necesidades */
+font-family: 'Open Sans', Arial, sans-serif;
+letter-spacing: 7px;
+}
+
+.menu-navegacion a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 18px; 
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+.menu-navegacion a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Estilo para el nombre en el menú */
+.menu-navegacion .nombre {
+font-weight: bold;
+font-size: 20px;
+align-items: center;
+letter-spacing: 7px;
+}
+/* Estilo de la lista de links */
+#links {
+display: flex; /* Usa Flexbox para una mejor disposición de los elementos */
+list-style-type: none; /* Remueve los estilos de lista por defecto */
+margin: 0; /* Elimina cualquier margen por defecto */
+padding: 0; /* Elimina cualquier padding por defecto */
+}
+
+#links li {
+margin-left: 20px; /* Agrega un margen a la izquierda para separar los elementos */
+/* Aquí puedes agregar más estilos a los elementos de la lista si lo necesitas */
+}
+
+
+
+/* Estilos para los íconos de redes sociales con sus colores de marca */
+.barra-superior .redes-sociales a {
+color: white; /* Color por defecto */
+transition: color 0.3s;
+}
+
+.barra-superior .redes-sociales a:hover {
+color: inherit; /* Mantiene el color original al pasar el mouse sobre el ícono */
+}
+
+/* Facebook */
+.barra-superior .redes-sociales a[href*="facebook"] {
+color: #3b5998;
+}
+
+/* Instagram */
+.barra-superior .redes-sociales a[href*="instagram"] {
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+}
+
+/* LinkedIn */
+.barra-superior .redes-sociales a[href*="linkedin"] {
+color: #0077b5;
+}
+
+
+/* Estilo del footer */
+.pie-pagina {
+background-color: #34495E; /* Azul marino suave */
+color: white;
+text-align: center;
+padding: 20px 0;
+position: relative;
+
+}
+
+.contenido-footer {
+margin: 0 auto;
+max-width: 960px; /* Limita el ancho del contenido */
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.redes-sociales-footer a {
+color: white;
+margin: 0 5px;
+}
+
+.redes-sociales-footer a:hover {
+color: #ECF0F1; /* Color al pasar el ratón */
+}
+
+/* Asegúrate de que el footer siempre esté en la parte inferior */
+html, body {
+height: 100%;
+}
+
+body {
+display: flex;
+flex-direction: column;
+}
+
+footer {
+margin-top: auto;
+}
+
+
+
+@keyframes colorChange {
+  0% {
+    color: white; /* Color inicial (blanco) */
+  }
+  50% {
+    color: #E4405F; /* Color de Instagram original */
+  }
+  100% {
+    color: white; /* Vuelve a blanco al final de la animación */
+  }
+}
+
+#menu li a[target="_blank"] i.fab.fa-instagram {
+  animation: colorChange 4s linear infinite; /* La animación dura 2 segundos y se repite infinitamente */
+  font-size: 30px; 
+  line-height: 30px;
+}
+
+@media (max-width: 1300px){
+  .enlace{
+      padding-left: 15px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+  .checkbtn{
+    display: block;
+}
+#menu {
+    position: fixed;
+    width: 75%;
+    height: 100vh;
+    background: #333;
+    top: 0px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+#menu li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+#menu li a {
+    font-size: 20px;
+}
+
+li a:hover,
+li a.active {
+    background: none;
+    color: black;
+}
+
+#check:checked ~ #menu {
+    left: 0;
+}
+
+.footer h4 {
+font-size: 16px;
+}
+
+.footer p {
+font-size: 10px;
+}
+}
+
+@media (max-width: 1000px){
+  .enlace{
+      padding-left: 15px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+}
+@media (max-width: 952px){
+  .enlace{
+      padding-left: 15px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+  .checkbtn{
+    display: block;
+}
+#menu {
+    position: fixed;
+    width: 75%;
+    height: 100vh;
+    background: #333;
+    top: 0px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+#menu li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+#menu li a {
+    font-size: 20px;
+}
+
+li a:hover,
+li a.active {
+    background: none;
+    color: black;
+}
+
+#check:checked ~ #menu {
+    left: 0;
+}
+
+.footer h4 {
+font-size: 16px;
+}
+
+.footer p {
+font-size: 10px;
+}
+}
+@media (max-width: 858px){
+  
+  .checkbtn{
+      display: block;
+  }
+  #menu {
+      position: fixed;
+      width: 75%;
+      height: 100vh;
+      background: #333;
+      top: 0px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+
+  #menu li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+
+  #menu li a {
+      font-size: 20px;
+  }
+
+  li a:hover,
+  li a.active {
+      background: none;
+      color: black;
+  }
+
+  #check:checked ~ #menu {
+      left: 0;
+  }
+
+  .footer h4 {
+  font-size: 16px;
+}
+
+.footer p {
+  font-size: 10px;
+}
+}
+@media (max-width: 400px){
+
+  .enlace{
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px 50px;
+      margin-left: -20px;
+      position: absolute;
+      line-height: 30px;
+      letter-spacing: 5px;
+  
+  }
+  .checkbtn{
+      font-size: 20px;
+
+  }
+  
+  .checkbtn{
+      display: block;
+  }
+  #menu {
+      position: fixed;
+      width: 75%;
+      height: 100vh;
+      background: #333;
+      top: 0px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+
+  #menu li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+
+  #menu li a {
+      font-size: 18px;
+  }
+
+  li a:hover,
+  li a.active {
+      background: none;
+      color: black;
+  }
+
+  #check:checked ~ #menu {
+      left: 0;
+  }
+
+  .footer h4 {
+  font-size: 14px;
+}
+
+.footer {
+  font-size: 10px;
+}
+}

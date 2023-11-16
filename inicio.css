@@ -1,0 +1,96 @@
+.intro {
+    display: flex;
+    align-items: center;
+    background:linear-gradient(rgba(5, 7, 12, 0.05),rgba(5, 7, 12, 0.75)),
+   url('img/fondo1.png');
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.foto-perfil {
+    width: 50%; /* Ajusta esto según tus necesidades */
+    order: 2; /* Coloca la imagen después del texto */
+    
+}
+
+.texto-intro {
+    width: auto; /* Ajusta esto según tus necesidades */
+    order: 1; /* Coloca el texto antes de la imagen */
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo blanco para la caja de texto */
+    padding: 20px; /* Espaciado interno para el texto */
+    margin: 20px; /* Espaciado externo para separarlo de otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para dar profundidad */
+    border-radius: 1px; /* Opcional: bordes redondeados */
+    color: #000000;
+    overflow: hidden;
+}
+
+.seccion-servicios {
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto-intro h1 {
+    margin-bottom: 45px; /* Espaciado debajo del título */
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.texto-intro .p-grande {
+    font-size: 30px; /* Tamaño grande */
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.texto-intro .p-mediano {
+    font-size: 25px; /* Tamaño mediano */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.texto-intro .p-normal {
+    font-size: 20px; /* Tamaño normal */
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #34495E; /* Azul marino suave */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.boton:hover {
+    background-color: white; /* Cambia el color de fondo al pasar el mouse sobre el botón (blanco) */
+    color: black; /* Cambia el color del texto al pasar el mouse sobre el botón (negro) */
+}
+
+.boton:active {
+    background-color: white; /* Cambia el color de fondo cuando se hace clic en el botón (blanco) */
+    color: black; /* Cambia el color del texto cuando se hace clic en el botón (negro) */
+}
+/* Asegúrate de añadir estilos responsivos para móviles */
+@media screen and (max-width: 900px) {
+
+    .intro {
+        flex-direction: column;
+        height: auto;
+    }
+   
+    .foto-perfil {
+        width: 50%; /* Ajusta esto según tus necesidades */
+        order: 1; /* Coloca la imagen después del texto */
+        
+    }
+}

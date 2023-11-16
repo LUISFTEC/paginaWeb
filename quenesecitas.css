@@ -1,0 +1,97 @@
+.seccion-servicios h2 {
+    text-align: center; /* Centra el título h2 horizontalmente */
+    color: white; /* Cambia el color del texto */
+    font-size: 24px; /* Cambia el tamaño de fuente */
+    margin-bottom: 20px; /* Agrega espacio inferior para separar del contenido siguiente */
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.seccion-servicios {
+    text-align: center; /* Centra el título h2 horizontalmente */
+    flex-direction: column;
+    background-color:  #34495E;
+    align-items: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: center; /* Centra las cajas de servicio horizontalmente */
+    padding-top: 20px; /* Espaciado entre el título y las cajas */
+}
+
+.caja-servicio {
+    width: 18%; /* O ajusta según el tamaño deseado para cada caja */
+    margin: 10px; /* Margen alrededor de cada caja */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Mantiene el color del texto igual al del documento */
+    background: linear-gradient(to bottom, #34495E, #34495E 50%, transparent 50%);
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Asegura que todo quede dentro de los bordes redondeados */
+}
+
+.caja-servicio img {
+    width: 100%; /* Ajusta la imagen para que ocupe todo el ancho de la caja */
+    height: auto;
+}
+
+.caja-servicio p {
+    padding: 10px; /* Espaciado interno para el texto dentro de la caja */
+    color: white;
+    transition: color 0.3s;
+}
+
+.caja-servicio:hover p,
+.caja-servicio:active p {
+    color: #d3cdcd; /* Cambia el color del texto cuando se hace clic o se pasa el mouse sobre la caja */
+}
+
+/* Estilos para pantallas de ancho menor o igual a 600px (ajusta el valor según tus necesidades) */
+@media (max-width: 900px) {
+    
+    .seccion-servicios {
+        text-align: center;
+        background-color:  #34495E;
+        align-items: center;
+        font-family: 'Open Sans', Arial, sans-serif;
+        min-height: auto;
+        height: auto;
+        
+    }
+
+    .contenedor-servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .caja-servicio {
+        width: 80%; /* Ajusta el ancho para que se adapte al contenido */
+        margin: 10px auto; /* Centra las cajas horizontalmente y agrega espacio vertical */
+        text-decoration: none;
+        color: inherit;
+        background: linear-gradient(to bottom, #34495E, #34495E 50%, transparent 50%);
+        border-radius: 2px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+
+    .caja-servicio img {
+        width: 100%;
+        height: auto;
+    }
+
+    .caja-servicio p {
+        padding: 10px;
+        color: white;
+    }
+
+    /* Añade margen superior al H2 en dispositivos móviles */
+    .seccion-servicios h2 {
+        margin-top: 20px;
+    }
+}

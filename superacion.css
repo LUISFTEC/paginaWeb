@@ -1,0 +1,51 @@
+.superacion-tecnologia{
+    display: flex;
+     align-items: center;
+     background:linear-gradient(rgba(5, 7, 12, 0.05),rgba(5, 7, 12, 0.75)),
+    url('img/fondo1.png');
+     background-size: cover;
+     height: auto;
+     padding: 50px;
+ }
+ .superacion {
+     width: 30%;
+     background-color: rgba(255, 255, 255, 0.4);
+     padding: 50px;
+     border-radius: 2px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     margin-left: 150px;
+ }
+
+ /* Estilos para los p */
+ .superacion p {
+     text-align: left; /* Alinea el texto a la izquierda */
+     font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+     font-size: 18px; /* Cambia el tamaño de fuente */
+     line-height: 1.5; /* Ajusta el espaciado entre líneas */
+     color: #000000; /* Cambia el color del texto */
+     text-align: justify;
+ }
+ 
+ @media screen and (max-width: 1200px) {
+    .superacion {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%; 
+        margin: 30px;
+    }
+
+    .superacion-tecnologia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+    }
+
+}
+@media screen and (max-width: 900px) {
+
+    .superacion-tecnologia{
+         height: auto;
+     }
+}

@@ -1,0 +1,97 @@
+.recursos-gratuitos {
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(rgba(5, 7, 12, 0.05),rgba(5, 7, 12, 0.75)),
+    url('img/fondo4.jpg');
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    height: auto;
+}
+.recursos {
+    width: 35%; /* Resta 10px para tener en cuenta el espacio adicional */
+    text-align: center;
+}
+
+.blog-youtube {
+    width:auto; /* Divide la pantalla en dos columnas */
+    padding: 20px; /* Agrega espacio interno */
+    border-radius: 2px;
+    text-align: center; /* Centra horizontalmente el contenido en cada div */
+}
+
+.recursos p {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.recursos p:first-child {
+    /* Estilos para el primer párrafo */
+    font-size: 50px;
+    color: #000000; /* Cambia el color de texto según tu preferencia */
+    /* Otros estilos para el primer párrafo */
+}
+
+.recursos p:last-child {
+    /* Estilos para el segundo párrafo */
+    font-size: 18px;
+    color: #666; /* Cambia el color de texto según tu preferencia */
+    /* Otros estilos para el segundo párrafo */
+}
+
+
+.blog-youtube {
+    flex: 2; /* Ocupa el doble de espacio que los recursos */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los videos se envuelvan a la siguiente fila cuando no haya suficiente espacio */
+    justify-content: space-between;
+}
+
+.youtube-video {
+    width: 45%; /* Ancho de cada video, deja un pequeño espacio entre ellos */
+    margin-bottom: 20px; /* Espacio entre los videos */
+    border: 1px solid #ddd; /* Borde alrededor de los videos */
+    padding: 10px;
+    text-align: center;
+    height: 300px;
+}
+
+.youtube-video iframe {
+    width: 100%; /* Asegura que el video se ajuste correctamente */
+    height: 100%;
+    
+}
+
+@media screen and (max-width: 900px) {
+
+    .recursos-gratuitos {
+        display: block;
+      
+    }
+    .recursos {
+       
+        text-align: center;
+    }
+
+    .recursos-gratuitos, .blog-youtube {
+        flex-direction: column; /* Cambia la dirección de flex a vertical */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center;
+    }
+
+    .recursos {
+        width: 100%; /* Ocupa todo el ancho en modo móvil */
+        margin-left: 0; /* Elimina el margen izquierdo en modo móvil */
+    }
+
+    .recursos, .youtube-video {
+        width: 100%; /* Los elementos ocuparán todo el ancho */
+        margin-left: 0; /* Elimina el margen izquierdo si lo hay */
+        margin-bottom: 20px; /* Añade un margen inferior para separar los elementos */
+    }
+
+    .youtube-video {
+        width: 90%; /* Los videos ocuparán todo el ancho en pantallas pequeñas */
+        height: 400px;
+    }
+}
