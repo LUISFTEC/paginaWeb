@@ -6,7 +6,7 @@
     flex-direction: column; /* Coloca los elementos en una columna vertical */
     text-align: center; /* Centra el texto horizontalmente */
     background:linear-gradient(rgba(5, 7, 12, 0.75),rgba(5, 7, 12, 0.75)),
-    url('quiensoy/quiensoyfondo1.png');
+    url('/quiensoy/quiensoyfondo1.png');
   }
 
 /* Estilos para el título h2 */

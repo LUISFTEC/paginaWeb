@@ -1,6 +1,6 @@
 .informacion-contacto {
     background:linear-gradient(rgba(5, 7, 12, 0.05),rgba(5, 7, 12, 0.75)),
-    url('img/fondo1.png');
+    url('/img/fondo1.png');
     padding: 40px;
     display: flex;
     justify-content: space-between;
