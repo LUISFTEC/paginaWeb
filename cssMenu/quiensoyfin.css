@@ -1,0 +1,106 @@
+#fin {
+    text-align: center; /* Centra el título y cualquier otro texto */
+    padding: 20px; /* Añade espacio alrededor de la sección para evitar que el contenido toque los bordes */
+    background: #d2d2d2;
+    justify-content: center;
+}
+
+#fin h2 {
+    margin-bottom: 20px; /* Espaciado debajo del título */
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 10px; 
+    color: #34495e;
+}
+
+.linea-divisorafin{
+    width: 40%; /* Ajusta el ancho de la línea divisora */
+    margin: 0 auto 20px; /* Centra la línea y añade espacio debajo */
+    
+}
+
+.contenedorfin {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /* Asegura una distribución uniforme del espacio */
+    align-items: stretch;/* Alinea los elementos verticalmente en el centro */
+    padding: 20px;
+}
+
+.pregunta-imagenfin {
+    max-width:  100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    flex-basis: 50%; /* Cada div ocupa exactamente la mitad del ancho del contenedor */
+    padding: 10px; /* Espacio alrededor de cada elemento */
+}
+/* Agregar esta regla para que el segundo div comience en la parte superior */
+.pregunta-imagenfin:nth-child(2) {
+    align-self: flex-start;
+}
+
+.pregunta-imagenfin img {
+    max-width: 100%; /* La imagen no excederá el ancho de su contenedor */
+    height:100%; /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+.pregunta-imagenfin p {
+    color: #333;
+    text-align: justify;
+    border-radius: 2px;
+    font-family: Arial, sans-serif; 
+    font-size: 18px;
+    padding: 10px; /* Agregar un relleno al párrafo */
+    margin-bottom: 20px;
+    width: 100%; /* Espacio debajo del párrafo */
+    
+}
+
+.pregunta-imagenfin img[src="/quiensoy/webig.png"] {
+    max-width: 100%; /* La imagen se ajusta al ancho del div */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+
+.botonf {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #34495E; /* Azul marino suave */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.botonf:hover {
+    background-color: white; /* Cambia el color de fondo al pasar el mouse sobre el botón (blanco) */
+    color: black; /* Cambia el color del texto al pasar el mouse sobre el botón (negro) */
+}
+
+.botonf:active {
+    background-color: white; /* Cambia el color de fondo cuando se hace clic en el botón (blanco) */
+    color: black; /* Cambia el color del texto cuando se hace clic en el botón (negro) */
+}
+
+
+@media (max-width: 1200px) {
+    .contenedorfin {
+        flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+    }
+
+    .fin{
+        flex-direction: column;
+    }
+
+    .pregunta-imagenfin {
+        width: 100%; /* Asegura que cada div use todo el ancho disponible en pantallas pequeñas */
+    }
+}

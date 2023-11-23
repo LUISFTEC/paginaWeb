@@ -1,0 +1,71 @@
+#formacion {
+    background-color: #eaeaea; /* URL de tu imagen de fondo */
+    width: auto;
+}
+
+
+/* Estilos base */
+.formacion-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 50px;
+  }
+  
+  .formacion-text {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding-right: 40px;
+    text-align: justify; /* Justifica el texto */
+}
+.formacion-text h2 {
+    color: #2c3e50; /* Color para los títulos */
+    margin-bottom: 15px; /* Espaciado debajo de los títulos */
+}
+  
+.formacion-text ul {
+    list-style: none; /* Elimina el estilo predeterminado de lista */
+    padding-left: 0; /* Elimina el padding predeterminado */
+}
+
+.formacion-text li {
+    margin-bottom: 20px; /* Espaciado entre elementos de la lista */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+}
+.formacion-text i {
+    color: #000000; /* Color para los íconos, ajusta según prefieras */
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+  .formacion-text, .formacion-image {
+    flex: 1 1 50%; /* Ocupa el 50% del contenedor */
+    padding: 20px;
+  }
+
+  .formacion-image {
+    flex: 1 1 50%; /* Ocupa el 50% del contenedor */
+    padding: 20px;
+}
+  
+  /* Asegura que la imagen se ajuste correctamente y tenga bordes redondeados */
+.formacion-image img {
+    width: 50%;
+    height: auto;
+    display: block;
+    max-width: 600px; /* Ajusta según tus necesidades */
+    margin: 0 auto; /* Centra la imagen */
+    border-radius: 5px; /* Borde redondeado, ajusta según prefieras */
+}
+  
+  /* Estilos para dispositivos pequeños */
+  @media (max-width: 1200px) {
+    .formacion-content {
+      flex-direction: column;
+    }
+  
+    .formacion-text, .formacion-image {
+      flex-basis: 100%; /* Ocupa el 100% del contenedor en dispositivos pequeños */
+    }
+  }
+  

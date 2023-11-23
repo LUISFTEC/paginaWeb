@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/cssInicio/estilo.css">
+  <link rel="stylesheet" href="/cssInicio/estilo.css">
+  <link rel="stylesheet" href="/cssInicio/inicio.css">
+  <link rel="stylesheet" href="/cssInicio/quenesecitas.css">
+  <link rel="stylesheet" href="/cssInicio/presentacion.css">
+  <link rel="stylesheet" href="/cssInicio/superacion.css">
+  <link rel="stylesheet" href="/cssInicio/recursos.css">
+  <link rel="stylesheet" href="/cssInicio/contactoinicio.css">
+
+  <link rel="stylesheet" href="/cssMenu/recursoscalculadora.css">
+  <title>Pagina Web</title>
+  <link rel="icon" type="image/x-icon" href="/img/logo.png" alt="Mi Logo" width="200" height="100">
+</head>
+<body>
+  <div class="barra-superior">
+    <div class="contacto" >
+      <a href="mailto:luisftec2022@gmail.com" class="social-link">
+              <i class="fa-solid fa-envelope"></i>
+              <span class="texto-oculto">luisftec2022@gmail.com</span>
+          </a>
+          <a href="tel:+51919641773" class="social-link">
+           <i class="fa-solid fa-phone"></i>
+              <span class="texto-oculto" >+51 919 641 773</span>
+          </a>
+          <a href="https://maps.app.goo.gl/HpKauRF74vitTPsJA" target="_blank" class="social-link">
+              <i class="fa-solid fa-map-marker-alt"></i>
+              <span class="texto-oculto" >Tu Dirección Aquí</span>
+          </a>
+  </div>
+    <div class="redes-sociales">
+        <!-- Íconos de redes sociales aquí -->
+        <a href="https://www.facebook.com/profile.php?id=61552658073593" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/luisftec/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/luisftec/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <!-- Otros íconos de redes sociales -->
+    </div>
+</div>
+    <nav class="menu-navegacion">
+        <input type="checkbox" id="check">
+        <a href="/index.html" class="nombre">luisftec</a>
+        <ul id="menu">
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/htmlMenu/quiensoy.html">Quien Soy</a></li>
+          <li><a href="/htmlMenu/servicios.html">Servicios</a></li>
+          <li><a href="https://felipecode.blogspot.com/">Blog</a></li>
+          <li><a href="/htmlMenu/recursosgratis.html">Recursos Gratis</a></li>
+          <li><a href="https://luisftec.github.io/portafolio/">Portfolio</a></li>
+          <li><a href="/htmlMenu/hablamos.html">¿Hablamos?</a></li>
+        </ul>
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+      </label>
+    </nav>
+ <!-- SECCION I N I C I O -->
+   
+
+ <div class="calculadora-wrapper">
+   <div class="calculadora">
+  <!-- Título de la Calculadora -->
+<div class="titulo-calculadora">Calculadora</div>
+  <div class="pantalla">
+      <div id="pantalla-entrada"></div>
+      <div id="pantalla-resultado"></div>
+  </div>
+  <div class="botones">
+
+  <button onclick="calcularPorcentaje()"><i class="fas fa-percent"></i></button>  
+  <button onclick="borrarEntrada()">CE</button> <!-- Borrar entrada actual -->
+  <button onclick="borrarTodo()">C</button>  
+  <button onclick="borrarUltimoDigito()"><i class="fas fa-backspace"></i></button>
+  <button onclick="calcularCuadrado()"><i class="fas fa-superscript"></i></button>     
+  <button onclick="calcularRaizCuadrada()"><i class="fas fa-square-root-alt"></i></button>
+  
+      <!-- Números -->
+  <button onclick="presionarNumero('1')">1</button>
+  <button onclick="presionarNumero('2')">2</button>
+  <button onclick="presionarNumero('3')">3</button>
+  <button onclick="presionarNumero('4')">4</button>
+  <button onclick="presionarNumero('5')">5</button>
+  <button onclick="presionarNumero('6')">6</button>
+  <button onclick="presionarNumero('7')">7</button>
+  <button onclick="presionarNumero('8')">8</button>
+  <button onclick="presionarNumero('9')">9</button>
+  <button onclick="presionarNumero('0')">0</button>
+
+  <!-- Operaciones básicas -->
+  <button onclick="calcularOperacion('+')"><i class="fas fa-plus"></i></button>
+  <button onclick="calcularOperacion('-')"><i class="fas fa-minus"></i></button>
+  <button onclick="calcularOperacion('*')"><i class="fas fa-times"></i></button>
+  <button onclick="calcularOperacion('/')"><i class="fas fa-divide"></i></button>
+  <!-- Botones para redes sociales -->
+  <!-- Botones para redes sociales -->
+  <a href="https://www.facebook.com/profile.php?id=61552658073593" target="_blank">
+      <button class="red-social facebook"><i class="fab fa-facebook-f"></i></button>
+  </a>
+  <a href="https://www.twitter.com/luisftec" target="_blank">
+      <button class="red-social twitter"><i class="fab fa-twitter"></i></button>
+  </a>
+  <a href="https://www.instagram.com/Luisftec" target="_blank">
+      <button class="red-social instagram"><i class="fab fa-instagram"></i></button>
+  </a>
+
+  <!-- Borrar y calcular -->
+  <button onclick="calcularResultado('=')"><i class="fas fa-equals"></i></button>     
+  </div>
+  <!-- Sección de créditos -->
+<div class="creditos">
+  Creado por Luisftec - 2023
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- SECCION FOOTER -->
+<footer class="pie-pagina">
+  <div class="contenido-footer">
+      <p>&copy; 2023 Luisftec - Todos los derechos reservados</p>
+      <div class="redes-sociales-footer">
+          <!-- Íconos de redes sociales -->
+          <a href="https://www.facebook.com/profile.php?id=61552658073593" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/luisftec/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="tu-link-linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com/LuisfTec" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.pinterest.com/luisftec/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="https://www.tiktok.com/@luis.code" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          <!-- Agregar más íconos si es necesario -->
+      </div>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="/js/scriptCalculadora.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+.servicios {
+    max-width: 1200px; /* Ancho máximo del contenedor principal */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    padding: 20px; /* Espacio adicional para evitar que el contenido toque los bordes */
+}
+
+.servicio-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.servicios h2 {
+    color: #000000; /* Cambia el color según tus preferencias */
+    margin-bottom: 40px;
+    padding: 30px;
+    font-size: 50px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    font-family: 'Arial', sans-serif; /* Cambia el tipo de letra si lo deseas */
+}
+
+.servicios p {
+    color: #303030; /* Cambia el color según tus preferencias */
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.servicio h3 {
+    transition: color 0.3s ease; /* Suaviza la transición del cambio de color */
+    font-family: 'Arial', sans-serif; 
+}
+
+.servicio h3:hover {
+    color: #009688; /* Cambia al color deseado al pasar el mouse */
+}
+
+.servicio {
+    /* Tus estilos existentes para la caja de servicio */
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 15px 0 15px 0; /* Redondea las esquinas superior izquierda e inferior derecha */
+}
+
+.servicio {
+    
+    /* Tus estilos existentes */
+    border-radius: 0 15px 0 15px; /* Redondea las esquinas superior derecha e inferior izquierda */
+    overflow: hidden;
+}
+
+.servicio img {
+    max-width: 100%;
+    border-radius: 0 15px 0 0;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.servicio img:hover {
+    opacity: 0.7; /* Hace la imagen más transparente al pasar el mouse */
+}
+.servicio img:hover {
+    transform: scale(1.01); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+
+.texto-con-boton {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.texto-con-boton h3 {
+    margin: 0;
+    padding: 30px;
+    flex-grow: 1; /* Permite que el texto ocupe el espacio disponible */
+}
+
+
+.servicio .boton-flecha {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50px; /* Diámetro del círculo */
+    height: 50px; /* Diámetro del círculo */
+    border-radius: 50%; /* Hace el círculo redondo */
+    margin-left: 10px; /* Espacio a la izquierda del botón */
+    cursor: pointer;
+    background-color: #b6c8d5; /* Color de fondo del círculo */
+}
+
+.boton-flecha i {
+    color: #ffffff; /* Color del ícono */
+    font-size: 20px; /* Tamaño del ícono */
+    transition: transform 0.3s ease;
+}
+
+.boton-flecha:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+
+
+/* Estilos para los bordes redondeados, como antes */
+/* ... */
+
+@media screen and (max-width: 900px) {
+    .servicio {
+        width: calc(50% - 20px); /* Dos cajas por fila */
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .servicio {
+        width: 80%;
+        border-radius: 20px;
+    }
+}

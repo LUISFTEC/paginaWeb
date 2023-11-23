@@ -1,0 +1,80 @@
+
+.calculadora-wrapper {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Asegúrate de que el contenedor tenga altura */
+    width: 100%; /* Opcional: dependiendo de cómo quieras manejar el ancho */
+}
+
+.calculadora {
+    width: 400px; /* Ajusta el ancho según prefieras */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.titulo-calculadora {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.pantalla {
+    width: auto;
+    height: 60px; /* Ajusta según prefieras */
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #e6e6e6;
+    overflow: auto; /* Agrega un scroll si el contenido es demasiado largo */
+    white-space: nowrap; 
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 10px;
+}
+
+.botones button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botones button:hover {
+    background-color: #d9d9d9;
+}
+
+.creditos {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.facebook {
+    background-color: #3b5998 !important; /* Azul de Facebook */
+    color: white !important;
+}
+
+.twitter {
+    background-color: #1DA1F2 !important; /* Azul de Twitter */
+    color: white !important;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); /* Degradado de Instagram */
+    color: white;
+}

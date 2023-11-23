@@ -1,0 +1,54 @@
+.formulario-contacto {
+    max-width: auto;
+    margin:auto ; /* Añade un margen inferior de 30px */
+    padding: 40px;
+    text-align: center;
+    background-color: #f8f9fa; /* Color de fondo de la caja */
+    border: 1px solid #ddd; /* Borde de la caja */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera para dar profundidad */
+    /* Otros estilos... */
+}
+
+.formulario-contacto h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; 
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="tel"],
+.formulario-contacto input[type="email"],
+.formulario-contacto textarea {
+    padding: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario-contacto .consentimiento {
+    margin-bottom: 20px;
+    text-align: left;
+    
+}
+
+.formulario-contacto button {
+    background-color: #34495e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #31383f;
+}

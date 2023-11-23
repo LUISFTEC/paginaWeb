@@ -1,0 +1,92 @@
+/* Estilos para la sección */
+#pregunta {
+    display: flex; /* Hace que los elementos dentro de la sección sean flexibles */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    flex-direction: column; /* Coloca los elementos en una columna vertical */
+    text-align: center; /* Centra el texto horizontalmente */
+    background:linear-gradient(rgba(5, 7, 12, 0.75),rgba(5, 7, 12, 0.75)),
+    url('/quiensoy/quiensoyfondo1.png');
+  }
+
+/* Estilos para el título h2 */
+#pregunta h2 {
+    text-align: center; /* Centrar el texto horizontalmente */
+    margin-top: 40px; /* Margen superior para separarlo de los párrafos */
+    font-size: 25px; /* Tamaño de fuente personalizado */
+    color: #ffffff; /* Color del texto */
+    margin: 40px 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el contenedor */
+  .contenedor1 {
+    display: flex; /* Utiliza flexbox para distribuir elementos en fila */
+    align-items: center;/* Alinea los elementos en la parte superior verticalmente */
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para el texto de la pregunta */
+  .pregunta-texto {
+    max-width: 50%; /* Ancho máximo del texto (50% del contenedor) */
+    padding: 20px; /* Espacio alrededor del texto */
+    background-color: #f5f5f5; /* Color de fondo de la caja de texto */
+    border: 1px solid #cac9c9; /* Borde alrededor de la caja de texto */
+    font-size: 18px;
+  }
+
+  /* Estilos para los párrafos */
+.pregunta-texto p {
+    color: #363636; /* Color del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin-bottom: 10px; /* Margen inferior entre párrafos */
+    text-align: justify;
+    font-family: Arial, sans-serif; 
+  }
+  
+  /* Estilos para la imagen */
+  .pregunta-imagen img {
+
+    max-width: 70%; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática de la imagen */
+    border: 1px solid #ddd; /* Borde de la imagen */
+    border-radius: 2px; /* Bordes redondeados */
+    display: block;
+    margin: 0 auto;
+  }
+
+ /* Estilos para la línea divisora */
+.linea-divisora {
+    border: none; /* Elimina el borde predeterminado de hr */
+    border-top: 2px solid #ffffff; /* Agrega un borde superior de 2px sólido en color #333 */
+    width: 95%; /* Ancho del 95% para abarcar casi todo el horizontal */
+    margin: 0 auto 20px; /* Centra horizontalmente y agrega margen inferior */
+  }
+  
+  
+  
+/* Estilos para adaptar a diferentes tamaños de pantalla */
+@media (max-width: 1200px) {
+    .contenedor1 {
+        flex-direction: column; /* Cambia a una columna vertical en dispositivos móviles */
+      }
+      /* Haz que los elementos dentro de pregunta-texto ocupen el ancho total */
+  .pregunta-texto {
+    max-width: 90%; /* Ancho máximo del 100% en dispositivos móviles */
+    padding-top: 10px; /* Margen superior */
+    padding-bottom: 10px; /* Margen inferior */
+  }
+
+      /* Ajusta el ancho máximo de la imagen y el margen inferior */
+  .pregunta-imagen img {
+    max-width: 70%; /* Ancho máximo del 100% en dispositivos móviles */
+    margin-bottom: 10px; /* Reduzco el margen inferior */
+  }
+
+  .pregunta-texto,
+  .pregunta-imagen {
+    margin: 10px; /* Margen alrededor de los elementos */
+  }
+}

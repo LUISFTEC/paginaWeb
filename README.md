@@ -1,6 +1,6 @@
 # Mi Portafolio
 
-Este es mi portafolio personal, una página web que he creado para mostrar mis habilidades y proyectos. Soy estudiante de Ingeniería de Sistemas en el 8vo ciclo, y esta web es una manera de presentar mi trabajo.
+Este es mi pagina web, que he creado para mostrar mis habilidades y proyectos. Soy estudiante de Ingeniería de Sistemas en el 8vo ciclo, y esta web es una manera de presentar mi trabajo.
 
 ## Descripción
 
