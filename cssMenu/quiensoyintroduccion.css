@@ -1,6 +1,6 @@
 #introduccion {
     background:linear-gradient(rgba(5, 7, 12, 0.75),rgba(5, 7, 12, 0.75)),
-    url('/quiensoy/quiensoyfondo1.png'); /* Color de fondo de la sección */
+    url('quiensoy/quiensoyfondo1.png'); /* Color de fondo de la sección */
     padding: 70px; 
     background-position: center;
     display: flex;

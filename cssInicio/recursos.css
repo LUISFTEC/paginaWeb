@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     background:linear-gradient(rgba(5, 7, 12, 0.05),rgba(5, 7, 12, 0.75)),
-    url('/img/fondo4.jpg');
+    url('img/fondo4.jpg');
     align-items: center;
     padding: 20px;
     background-color: #f0f0f0;
